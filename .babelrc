@@ -1,0 +1,22 @@
+{
+  "presets": [
+    ["latest", {
+      "es2015": {
+        "loose": true
+      }
+    }],
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    "react-hot-loader/babel",
+    ["import", { "style": true, "libraryName": "antd" }],
+    ["transform-runtime", {
+      "helpers": false,
+      "polyfill": false,
+      "regenerator": true,
+      "moduleName": "babel-runtime"
+    }]
+  ]
+}

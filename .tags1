@@ -1,0 +1,13 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+constructor	C:\Users\lbl\Desktop\cosmo\src\js\containers\SettingPage\index.js	/^    constructor(props) {$/;"	function	line:11
+state.loading	C:\Users\lbl\Desktop\cosmo\src\js\containers\SettingPage\index.js	/^               loading: false,$/;"	property	line:14
+state.visible	C:\Users\lbl\Desktop\cosmo\src\js\containers\SettingPage\index.js	/^               visible: false,$/;"	property	line:15
+showModal	C:\Users\lbl\Desktop\cosmo\src\js\containers\SettingPage\index.js	/^  showModal() {$/;"	function	line:25
+handleOk	C:\Users\lbl\Desktop\cosmo\src\js\containers\SettingPage\index.js	/^  handleOk(){$/;"	function	line:30
+handleCancel	C:\Users\lbl\Desktop\cosmo\src\js\containers\SettingPage\index.js	/^  handleCancel(){$/;"	function	line:33
+render	C:\Users\lbl\Desktop\cosmo\src\js\containers\SettingPage\index.js	/^  render() {$/;"	function	line:36
