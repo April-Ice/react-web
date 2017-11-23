@@ -66,7 +66,7 @@ module.exports = {
       template:'src/index.html',
       // html模板的路径
       
-      title: 'COSMO',
+      title: 'April-Ice',
       
       filename:'index.html',
       // 文件名以及文件将要存放的位置

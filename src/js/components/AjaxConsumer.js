@@ -1,5 +1,4 @@
 import { Modal } from 'antd';
-import { browserHistory } from 'react-router';
 import cookie from 'react-cookie';
 
 // import $ from 'jquery'
@@ -39,7 +38,6 @@ export function fetchData(_that, options, callback, errorCallback) {
                         title: '提示',
                         content: '尚未登录或登录超时，将返回登录页',
                         onOk() {
-                            // browserHistory.push('/')
                             location.href = '/'
                         },
                     });

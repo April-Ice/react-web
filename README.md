@@ -1,4 +1,4 @@
-# COSMO
+# April-Ice
 综合运用了react+react-router+webpack+es2015。  React版本为15.4.1。
 
 模板运用组件化的思想，以及样式的模块化（cssModules)。

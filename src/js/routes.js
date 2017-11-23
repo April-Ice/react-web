@@ -11,12 +11,11 @@ import {
 
 export default (
     <Route path="/" component={App}>
-        {/* <IndexRoute component={Welcome} /> */}
-        <IndexRoute component={April} />
+        <IndexRoute component={Welcome} />
 
         <Route path="april" component={April}>
-            <IndexRoute component={Intro} />
-            {/* <Route path='intro' component={Intro} /> */}
+            <IndexRoute component={Books} />
+            <Route path='intro' component={Intro} />
             <Route path='books' component={Books} />
         </Route>
 

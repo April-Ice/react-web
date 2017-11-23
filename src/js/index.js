@@ -1,7 +1,8 @@
 import { AppContainer } from 'react-hot-loader'
 import React from 'react'
 import { render } from 'react-dom'
-import { browserHistory } from 'react-router'
+// import { browserHistory } from 'react-router'
+import { hashHistory } from 'react-router'
 import Root from './containers/Root'
 import Redbox from 'redbox-react'
 const rootEl = document.getElementById('app');
@@ -13,7 +14,8 @@ import 'babel-polyfill'
 
 render(
       <AppContainer errorReporter={Redbox}>
-        <Root history={browserHistory} />
+        {/* <Root history={browserHistory} /> */}
+        <Root history={hashHistory} />
       </AppContainer>,
       rootEl
 );
@@ -38,7 +40,8 @@ if (module.hot) {
     const NextApp = require('./containers/Root').default;
     render(
       <AppContainer errorReporter={Redbox}>
-        <NextApp history={browserHistory} />
+        {/* <NextApp history={browserHistory} /> */}
+        <NextApp history={hashHistory} />
       </AppContainer>,
       rootEl
     )

@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
-import {browserHistory} from 'react-router';
-
-import {Link} from 'react-router'
+import {Link, hashHistory} from 'react-router'
 import {Tabs, Icon, Button} from 'antd';
 
 import Actions from '../../actions';
@@ -15,7 +13,10 @@ export default class Welcome extends Component {
 
     handleScroll() {
         console.log('鼠标滚动事件');
-        browserHistory.push('/april');
+        hashHistory.push({  
+            pathname: '/april/',  
+            query: { },  
+        })      
     }
 
     render() {

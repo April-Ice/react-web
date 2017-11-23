@@ -41,7 +41,7 @@ export default {
   target: 'web', // necessary per https://webpack.github.io/docs/testing.html#compile-and-test
   output: {
     path: `${__dirname}/src`, // Note: Physical files are only output by the production build task `npm run build`.
-    publicPath: '/',
+    publicPath: './',
     filename: 'bundle.js'
   },
   // 文件输出目录
@@ -55,7 +55,7 @@ export default {
     new webpack.NoErrorsPlugin(),
     new HtmlWebpackPlugin({     // Create HTML file that includes references to bundled CSS and JS.
       template: 'src/index.html',
-      title: 'cosmo-开发模式',
+      title: 'AprilIce-开发模式',
       favicon:'./src/favicon.ico',
       minify: {
         removeComments: true,
