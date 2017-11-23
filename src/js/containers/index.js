@@ -1,9 +1,10 @@
 export {default as App} from './App'
 
 
-//cosmo
-export { default as April } from './April'
+//pages
 export { default as Welcome } from './Welcome'
+export { default as April } from './April'
+export { default as Intro } from './April/intro.js'
 export { default as Books } from './Apply/Books'
 
 // 404

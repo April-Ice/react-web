@@ -1,0 +1,15 @@
+{
+    "data":[
+      {
+        "key": 1,
+        "name": "基础数据管理",
+        "state": "check"
+      },
+      {
+        "key": 2,
+        "name": "潜意识",
+        "state": "check"
+      }
+    ]
+  }
+  
