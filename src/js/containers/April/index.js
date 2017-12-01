@@ -38,8 +38,16 @@ export default class April extends Component {
                             </Link>
                         </Menu.Item>
                         <Menu.Item key="3">
-                            <Icon type="upload"/>
-                            <span>other</span>
+                            <Link to='/april/common'>
+                                <Icon type="upload"/>
+                                <span>Common</span>
+                            </Link>
+                        </Menu.Item>
+                        <Menu.Item key="4">
+                            <Link to='/april/echarts'>
+                                <Icon type="plus"/>
+                                <span>Echarts</span>
+                            </Link>
                         </Menu.Item>
                     </Menu>
                 </Sider>
@@ -59,7 +67,6 @@ export default class April extends Component {
                     <Content
                         style={{
                         margin: '24px 16px',
-                        // background: '#fff',
                         minHeight: 580
                     }}>
                         {this.props.children}

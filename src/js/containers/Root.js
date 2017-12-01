@@ -5,6 +5,7 @@ import {Router, hashHistory} from 'react-router'
 
 import '../../styles/app.scss'
 import '../../styles/common.scss'
+import '../../styles/monokai-sublime.scss'
 
 export default class Root extends Component {
     render() {

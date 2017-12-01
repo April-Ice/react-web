@@ -572,3 +572,8 @@ const customStyles = {
         import 'antd/lib/date-picker/style/css';        // 加载 CSS
         // import 'antd/lib/date-picker/style';         // 加载 LESS
         ```
+#### react-highlight
+> npm install react-highlight --save
+  var Highlight = require('react-highlight');
+  <link rel="stylesheet" href="/path/to/styles/theme-name.css">
+  地址：https://github.com/akiran/react-highlight

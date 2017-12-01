@@ -7,6 +7,10 @@ import {
     April,
     Intro,
     Books,
+    CommonMenu,
+    CommonText,
+    EchartsList,
+    EchartMapAni
 } from './containers'
 
 export default (
@@ -17,6 +21,10 @@ export default (
             <IndexRoute component={Books} />
             <Route path='intro' component={Intro} />
             <Route path='books' component={Books} />
+            <Route path='common' component={CommonMenu} />
+            <Route path='commonText' component={CommonText} />
+            <Route path='echarts' component={EchartsList} />
+            <Route path='mapAni' component={EchartMapAni} />
         </Route>
 
         <Route path="*" component={NotFoundPage} />
