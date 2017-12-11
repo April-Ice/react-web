@@ -24,7 +24,13 @@ export default class April extends Component {
             <Layout>
                 <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
                     <div className={styles.logo}/>
-                    <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
+                    <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
+                        <Menu.Item key="4">
+                            <Link to='/april/echarts'>
+                                <Icon type="plus"/>
+                                <span>Echarts</span>
+                            </Link>
+                        </Menu.Item>
                         <Menu.Item key="1">
                             <Link to='/april/intro'>
                                 <Icon type="user"/>
@@ -43,12 +49,7 @@ export default class April extends Component {
                                 <span>Common</span>
                             </Link>
                         </Menu.Item>
-                        <Menu.Item key="4">
-                            <Link to='/april/echarts'>
-                                <Icon type="plus"/>
-                                <span>Echarts</span>
-                            </Link>
-                        </Menu.Item>
+
                     </Menu>
                 </Sider>
                 <Layout>

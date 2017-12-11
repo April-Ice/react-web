@@ -18,7 +18,7 @@ export default (
         <IndexRoute component={Welcome} />
 
         <Route path="april" component={April}>
-            <IndexRoute component={Books} />
+            <IndexRoute component={EchartsList} />
             <Route path='intro' component={Intro} />
             <Route path='books' component={Books} />
             <Route path='common' component={CommonMenu} />
