@@ -23,7 +23,7 @@ export default class April extends Component {
         return (
             <Layout>
                 <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
-                    <div className={styles.logo}/>
+                    <div className={styles.logo}></div>
                     <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
                         <Menu.Item key="4">
                             <Link to='/april/echarts'>
@@ -49,15 +49,10 @@ export default class April extends Component {
                                 <span>Common</span>
                             </Link>
                         </Menu.Item>
-
                     </Menu>
                 </Sider>
                 <Layout>
-                    <Header
-                        style={{
-                        background: '#fff',
-                        padding: 0
-                    }}>
+                    <Header className={styles.headerbar}>
                         <Icon
                             className={styles.trigger}
                             type={this.state.collapsed
@@ -65,16 +60,12 @@ export default class April extends Component {
                             : 'menu-fold'}
                             onClick={this.toggle}/>
                     </Header>
-                    <Content
-                        style={{
-                        margin: '24px 16px',
-                        minHeight: 580
-                    }}>
+                    <Content className="conPage">
                         {this.props.children}
                     </Content>
-                    <Footer>
+                    {/* <Footer>
                         copyright
-                    </Footer>
+                    </Footer> */}
                 </Layout>
             </Layout >
         );

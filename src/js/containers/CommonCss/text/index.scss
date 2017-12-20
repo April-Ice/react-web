@@ -1,8 +1,13 @@
 
+.textPage{
+    padding: 0 10%;
+}
 .textbox {
-    padding: .8em 1em;
+    // padding: .8em 1em;
     font-size: 20px;
-    box-shadow: 1px 1px 5px #eee;
+    // box-shadow: 1px -1px 1px rgb(30, 131, 143);
+    margin-top: 2em;
+    border-radius: 6px;
 }
 .textbox > div{
     padding: 1em 2em;
@@ -67,6 +72,7 @@
 
 .text41 {
     color: #000;
+    background: #eee;
     animation-name: fadeIn;
     /*动画名称*/
     animation-duration: 5s;

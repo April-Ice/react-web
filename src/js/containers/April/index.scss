@@ -12,7 +12,15 @@
 
 .logo {
     height: 32px;
-    background: #333;
+    line-height: 32px;
+    background: rgb(12, 12, 0);
+    color: rgb(219, 216, 26);
     border-radius: 6px;
     margin: 16px;
+    padding-left: 2em;
+}
+.headerbar{
+    height: 8vh;
+    background: #fff;
+    padding: 0;
 }

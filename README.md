@@ -577,3 +577,7 @@ const customStyles = {
   var Highlight = require('react-highlight');
   <link rel="stylesheet" href="/path/to/styles/theme-name.css">
   地址：https://github.com/akiran/react-highlight
+
+  import Highlight from 'react-highlight';
+  import 'highlight.js/styles/tomorrow-night.css'
+  <Highlight search="brown">code</Highlight>
