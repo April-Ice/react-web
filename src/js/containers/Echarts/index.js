@@ -13,6 +13,7 @@ export default class EchartsList extends Component {
         return (
             <div>
                 <GDMap />
+                {/* <EchartMapAni/> */}
             </div>
         );
     }

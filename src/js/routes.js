@@ -10,7 +10,8 @@ import {
     CommonMenu,
     CommonText,
     EchartsList,
-    EchartMapAni
+    EchartMapAni,
+    BoxBorder
 } from './containers'
 
 export default (
@@ -25,6 +26,7 @@ export default (
             <Route path='commonText' component={CommonText} />
             <Route path='echarts' component={EchartsList} />
             <Route path='mapAni' component={EchartMapAni} />
+            <Route path='boxBorder' component={BoxBorder} />
         </Route>
 
         <Route path="*" component={NotFoundPage} />

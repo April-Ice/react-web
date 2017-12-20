@@ -1,0 +1,37 @@
+$borderWidth: 2px;
+$boxWidth: 90%;
+$boxHeight: 200px;
+$borderCorner: 16px;
+.seabord {
+    background: radial-gradient(#2040b3 8%, #0c1435);
+    height: 80vh;
+    padding: 2em;
+}
+
+.border {
+    border: $borderWidth solid rgb(225, 228, 231);
+    width: $boxWidth;
+    height: $boxHeight;
+    position: absolute;
+    &:hover {}
+} //上下
+.border:before {
+    content: '';
+    position: absolute;
+    width: calc(100% - 2*$borderCorner);
+    height: $boxHeight;
+    top: -$borderWidth;
+    left: $borderCorner;
+    border-bottom: $borderWidth solid #02386b;
+    border-top: $borderWidth solid #02386b;
+} //左右
+.border:after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 2*$borderWidth);
+    height: calc(100% - 2 * $borderCorner);
+    right: -$borderWidth;
+    top: $borderCorner;
+    border-left: $borderWidth solid #02386b;
+    border-right: $borderWidth solid #02386b;
+}

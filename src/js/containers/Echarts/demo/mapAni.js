@@ -54,7 +54,7 @@ export default class EchartMapAni extends Component {
     componentDidMount() {
         this.myChart = echarts.init(document.getElementById('barChart'));
         this.myChart.setOption(this.option, true);
-        window.onresize = this.myChart.resize;
+        window.onresize = this.myChart.resize();
     }
 
     setSeries = () => {
@@ -358,19 +358,12 @@ export default class EchartMapAni extends Component {
     };
 
     render() {
-        return ( <
-            div className = {
-                styles.conBox
-            } >
-            <
-            p > 调用图表 < /p>  <
-            div id = 'barChart'
-            className = {
-                styles.chartBox
-            } >
-            <
-            /div>  <
-            /div>
+        return ( 
+        <div className = {styles.conBox} >
+            < p > 调用图表 </p>  
+            <div id = 'barChart' className = {styles.chartBox} >
+            </div>  
+        </div >
         );
     }
 }
