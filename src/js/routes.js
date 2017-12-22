@@ -11,6 +11,8 @@ import {
     CommonText,
     EchartsList,
     EchartMapAni,
+    GDMap,
+    Charts,
     BoxBorder
 } from './containers'
 
@@ -26,6 +28,8 @@ export default (
             <Route path='commonText' component={CommonText} />
             <Route path='echarts' component={EchartsList} />
             <Route path='mapAni' component={EchartMapAni} />
+            <Route path='gdmap' component={GDMap} />
+            <Route path='charts' component={Charts} />
             <Route path='boxBorder' component={BoxBorder} />
         </Route>
 

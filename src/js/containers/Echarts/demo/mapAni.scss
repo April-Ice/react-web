@@ -1,12 +1,13 @@
-
-.conBox{
+.conBox {
     width: 100%;
     height: 87.3vh;
     position: relative;
 }
-.chartBox{
+
+.chartBox {
     width: 100%;
-    height: 100%;;
+    height: 100%;
+    ;
     background: #fff;
 }
 
@@ -17,16 +18,63 @@
     width: 300px;
     z-index: 999;
     min-height: 200px;
-    overflow: hidden;
-    // overflow-y: scroll;
+    overflow: hidden; // overflow-y: scroll;
     // background: rgba(99,155,202,0.8);
-    background: linear-gradient(0deg,rgba(99,155,202,0.8),rgba(97, 230, 223, 0.8));
+    background: linear-gradient(0deg, rgba(99, 155, 202, 0.8), rgba(97, 230, 223, 0.8));
     box-shadow: 2px 2px 5px #000;
     border-radius: 2px;
     padding: 1em 2em;
 }
 
-.map_board .title{
+.map_board .title {
     font-weight: bold;
     color: #fff;
+}
+
+//曲线图边框
+.bottomBox {
+    color: #fff;
+    border: 1.6px solid #e1e4e7;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    padding-bottom: .1rem;
+}
+
+.bottomBox:before {
+    content: '';
+    position: absolute;
+    width: calc(100% - 2*16px);
+    height: calc(100% + 2*1.6px);
+    top: -1.6px;
+    left: 16px;
+    border-bottom: 1.6px solid #162c70;
+    border-top: 1.6px solid #162c70;
+}
+
+.bottomBox:after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 2*1.6px);
+    height: calc(100% - 2 *16px);
+    right: -1.6px;
+    top: 16px;
+    border-left: 1.6px solid #162c70;
+    border-right: 1.6px solid #162c70;
+}
+
+.bottomBox .scroll {
+    overflow-y: auto;
+    height: 32vh;
+    position: relative;
+    z-index: 99;
+    width: 96%;
+    margin: .2rem auto;
+    margin-top: .4rem;
+    font-size: .16rem;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 2px;
+    background-color: rgba(255, 255, 255, .2);
 }

@@ -10,6 +10,8 @@ export { default as CommonMenu } from './CommonCss'
 export { default as CommonText } from './CommonCss/text'
 export { default as EchartsList } from './Echarts'
 export { default as EchartMapAni } from './Echarts/demo/mapAni.js'
+export { default as GDMap } from './Echarts/demo/mapAni2.js'
+export { default as Charts } from './Echarts/demo/chart.js'
 export { default as BoxBorder } from './CommonCss/box_border'
 
 

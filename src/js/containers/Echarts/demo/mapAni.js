@@ -1,11 +1,8 @@
-import React, {
-    Component
-} from 'react'
-import {
-    Link
-} from 'react-router'
+import React, {Component} from 'react'
+import {Link} from 'react-router'
 
 import styles from './mapAni.scss'
+
 
 const pathSymbols = {
     //驯鹿

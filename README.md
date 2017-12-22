@@ -581,3 +581,13 @@ const customStyles = {
   import Highlight from 'react-highlight';
   import 'highlight.js/styles/tomorrow-night.css'
   <Highlight search="brown">code</Highlight>
+
+#### react-echarts
+> npm install echarts --save
+  npm install --save echarts-for-react
+  import ReactEcharts from 'echarts-for-react';
+  <ReactEcharts
+    option={option}
+    style={{height: '400px', width: '100%'}}
+    className={'react_for_echarts'}
+  />
