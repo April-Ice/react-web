@@ -4,6 +4,7 @@ import {Layout, Button, Row, Col, Alert, Modal } from 'antd';
 
 import Highlight from 'react-highlight';
 import 'highlight.js/styles/monokai-sublime.css'
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 import styles from './index.scss'
 import classnames from 'classnames'
@@ -671,8 +672,6 @@ export default class AnimateCss extends Component {
     }
 
     render() {
-       
-
         return (
             <div className={styles.seabord}>
                 <Alert message="鼠标悬停显示效果，点击显示代码" type="info" showIcon />
@@ -782,6 +781,12 @@ export default class AnimateCss extends Component {
                     onCancel={this.handleCancel}
                     onOk={this.handleOk}
                     className={styles.codeBox}
+                    footer={[
+                        <Button onClick={this.handleCancel}>取消</Button>,
+                        <CopyToClipboard text={this.state.code} onCopy={() => this.setState({copied: true})}>
+                            <Button type="primary" onClick={this.handleOk}>复制</Button>
+                        </CopyToClipboard>,
+                      ]}
                     >
                     <Highlight>{this.state.code}</Highlight>
                 </Modal>

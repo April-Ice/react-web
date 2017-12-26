@@ -591,3 +591,10 @@ const customStyles = {
     style={{height: '400px', width: '100%'}}
     className={'react_for_echarts'}
   />
+
+#### react-clipboard  一键复制
+  npm install --save react react-copy-to-clipboard
+  import {CopyToClipboard} from 'react-copy-to-clipboard';
+  <CopyToClipboard text={this.state.code} onCopy={() => this.setState({copied: true})}>
+      <Button>复制 </Button>
+  </CopyToClipboard>
