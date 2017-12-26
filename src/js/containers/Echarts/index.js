@@ -22,7 +22,7 @@ export default class EchartsList extends Component {
                     </Col>
                     <Col span={4}>
                         <Link to="/april/charts">
-                            <Card title="常规图标" bordered={false}>折线图、柱形图等</Card>
+                            <Card title="常规图表" bordered={false}>折线图、柱形图等</Card>
                         </Link>
                     </Col>
                 </Row>

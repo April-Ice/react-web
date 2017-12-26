@@ -24,6 +24,11 @@ export default class CommonMenu extends Component {
                             <Card title="CSS3动画" bordered={false}>基本样式，纯CSS3</Card>
                         </Link>
                     </Col>
+                    <Col span={4}>
+                        <a href="https://uigradients.com/#Portrait" target="_blank">
+                            <Card title="CSS3渐变色" bordered={false}>高质感配色方案</Card>
+                        </a>
+                    </Col>
                 </Row>
             </div>
         );
