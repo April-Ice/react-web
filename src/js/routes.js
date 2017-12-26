@@ -13,6 +13,7 @@ import {
     EchartMapAni,
     GDMap,
     Charts,
+    AnimateCss,
     BoxBorder
 } from './containers'
 
@@ -31,6 +32,7 @@ export default (
             <Route path='gdmap' component={GDMap} />
             <Route path='charts' component={Charts} />
             <Route path='boxBorder' component={BoxBorder} />
+            <Route path='aniCss' component={AnimateCss} />
         </Route>
 
         <Route path="*" component={NotFoundPage} />

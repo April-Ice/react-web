@@ -19,6 +19,11 @@ export default class CommonMenu extends Component {
                             <Card title="镶边边框" bordered={false}>四角镶边</Card>
                         </Link>
                     </Col>
+                    <Col span={4}>
+                        <Link to="/april/aniCss">
+                            <Card title="CSS3动画" bordered={false}>基本样式，纯CSS3</Card>
+                        </Link>
+                    </Col>
                 </Row>
             </div>
         );
