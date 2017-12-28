@@ -14,7 +14,8 @@ import {
     GDMap,
     Charts,
     AnimateCss,
-    BoxBorder
+    BoxBorder,
+    ImgFilter
 } from './containers'
 
 export default (
@@ -33,6 +34,7 @@ export default (
             <Route path='charts' component={Charts} />
             <Route path='boxBorder' component={BoxBorder} />
             <Route path='aniCss' component={AnimateCss} />
+            <Route path='imgFilter' component={ImgFilter} />
         </Route>
 
         <Route path="*" component={NotFoundPage} />

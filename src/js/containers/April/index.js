@@ -31,10 +31,10 @@ export default class April extends Component {
                                 <span>Echarts</span>
                             </Link>
                         </Menu.Item>
-                        <Menu.Item key="1">
-                            <Link to='/april/intro'>
-                                <Icon type="user"/>
-                                <span>Intro</span>
+                        <Menu.Item key="3">
+                            <Link to='/april/common'>
+                                <Icon type="upload"/>
+                                <span>Common</span>
                             </Link>
                         </Menu.Item>
                         <Menu.Item key="2">
@@ -43,10 +43,10 @@ export default class April extends Component {
                                 <span>Books</span>
                             </Link>
                         </Menu.Item>
-                        <Menu.Item key="3">
-                            <Link to='/april/common'>
-                                <Icon type="upload"/>
-                                <span>Common</span>
+                        <Menu.Item key="1">
+                            <Link to='/april/intro'>
+                                <Icon type="user"/>
+                                <span>Intro</span>
                             </Link>
                         </Menu.Item>
                     </Menu>

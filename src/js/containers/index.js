@@ -14,6 +14,7 @@ export { default as GDMap } from './Echarts/demo/mapAni2.js'
 export { default as Charts } from './Echarts/demo/chart.js'
 export { default as BoxBorder } from './CommonCss/box_border'
 export { default as AnimateCss } from './CommonCss/animate'
+export { default as ImgFilter } from './CommonCss/imgFilter'
 
 
 // 404

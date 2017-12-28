@@ -130,8 +130,7 @@ export default class CommonText extends Component {
                 </Collapse>
                 <div className={styles.textbox}>
                     <div className={styles.text31}>
-                        <p>
-                            3.1 文字扫光效果 -webkit-keyframes</p>
+                        <p>3.1 文字扫光效果 -webkit-keyframes</p>
                     </div>
                 </div>
                 <Collapse onChange={callback}>
@@ -142,7 +141,7 @@ export default class CommonText extends Component {
                 <div className={styles.textbox}>
                     <div className={styles.text41}>4.1 文字淡入淡出效果 -webkit-keyframes</div>
                 </div>
-                <Collapse  onChange={callback}>
+                <Collapse onChange={callback}>
                     <Panel header="查看代码" key="1">
                         <Highlight>{code6}</Highlight>
                     </Panel>

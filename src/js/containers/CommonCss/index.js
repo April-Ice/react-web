@@ -29,6 +29,11 @@ export default class CommonMenu extends Component {
                             <Card title="CSS3渐变色" bordered={false}>高质感配色方案</Card>
                         </a>
                     </Col>
+                    <Col span={4}>
+                        <Link to="/april/imgFilter">
+                            <Card title="css图片滤镜" bordered={false}>黑白，倒影等</Card>
+                        </Link>
+                    </Col>
                 </Row>
             </div>
         );
