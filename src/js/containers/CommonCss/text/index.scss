@@ -1,17 +1,19 @@
-
-.textPage{
+.textPage {
     padding: 0 10%;
 }
+
 .textbox {
     // padding: .8em 1em;
-    font-size: 20px;
-    // box-shadow: 1px -1px 1px rgb(30, 131, 143);
+    font-size: 20px; // box-shadow: 1px -1px 1px rgb(30, 131, 143);
     margin-top: 2em;
     border-radius: 6px;
 }
-.textbox > div{
-    padding: 1em 2em;
+
+.textbox>div {
+    padding: 10px 20px;
 }
+
+
 /*<!-------------文字效果1  text1------------------> */
 
 .text11 {
@@ -19,6 +21,8 @@
     color: #8c99a6;
     text-shadow: 0 -1px 1px black;
 }
+
+
 /*<!-------------文字效果2-1  text2-1------------------> */
 
 .text21 {
@@ -32,6 +36,8 @@
         -webkit-background-clip: text;
     }
 }
+
+
 /*<!-------------文字效果3  text3------------------> */
 
 .text12 {
@@ -39,6 +45,8 @@
     color: #ffc;
     text-shadow: 0 0 .1em, 0 0 .3em;
 }
+
+
 /*<!-------------文字效果4  text4------------------> */
 
 .text13 {
@@ -46,6 +54,8 @@
     background: hsl(0, 50%, 45%);
     text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black;
 }
+
+
 /*<!-------------文字效果3-1  text3-1------------------> */
 
 .text31 {
@@ -68,6 +78,8 @@
         background-position: 100% 100%;
     }
 }
+
+
 /*<!-------------文字效果4-1  text4-1------------------> */
 
 .text41 {
@@ -89,5 +101,38 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+
+/*<!-------------文字效果5-1 文字镂空------------------> */
+
+.clipText {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: #40E0D0 linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+
+/*<!-------------文字效果5-2 斑马线效果------------------> */
+
+.zebraText {
+    background-image: -webkit-linear-gradient(crimson 50%, white 50%);
+    background-position: 0 0;
+    -webkit-background-clip: text;
+    background-size: 100% 1.6rem;
+    background-repeat: repeat;
+    animation: stripes 3s linear infinite;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+@keyframes stripes {
+    100% {
+        background-position: 0 -6rem;
     }
 }

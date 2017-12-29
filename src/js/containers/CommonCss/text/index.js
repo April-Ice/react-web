@@ -5,87 +5,16 @@ import Highlight from 'react-highlight';
 import 'highlight.js/styles/monokai-sublime.css'
 
 import styles from './index.scss'
+import codeObj from './data.js'
 
 export default class CommonText extends Component {
     render() {
         const Panel = Collapse.Panel;
 
         function callback(key) {
-            console.log(key);
+            // console.log(key);
         }
 
-        let code1 = ` 
-        .text11 {
-            background: #434d56;
-            color: #8c99a6;
-            text-shadow: 0 -1px 1px black;
-        }`;
-        let code2 = ` 
-        .text12 {
-            background: #191919;
-            color: #ffc;
-            text-shadow: 0 0 .1em, 0 0 .3em;
-        }`;
-        let code3 = ` 
-        .text13 {
-            color: #fff;
-            background: hsl(0, 50%, 45%);
-            text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black;
-        }`;
-        let code4 = ` 
-        .text21 {
-            background-color: #fff;
-            p {
-                font-weight: bold;
-                font-size: 1.4em;
-                color: transparent;
-                background-color: #000;
-                text-shadow: rgba(255, 255, 255, 0.5) 0 5px 6px, rgba(255, 255, 255, 0.2) 1px 3px 3px;
-                -webkit-background-clip: text;
-            }
-        }`;
-        let code5 = ` 
-        .text31 {
-            background: #191919;
-        }
-        
-        .text31>p {
-            background: -webkit-linear-gradient(90deg, #111, #fff) 0 0 no-repeat;
-            -webkit-background-size: 1em;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: rgba(255, 255, 255, 0.3);
-            -webkit-animation: slideShine 3s infinite;
-        }
-        
-        @keyframes slideShine {
-            0% {
-                background-position: 0 0;
-            }
-            100% {
-                background-position: 100% 100%;
-            }
-        }`;
-        let code6 = ` 
-        .text41 {
-            color: #000;
-            animation-name: fadeIn;
-            /*动画名称*/
-            animation-duration: 5s;
-            /*动画持续时间*/
-            animation-iteration-count: 1000;
-            /*动画次数*/
-            animation-delay: 0s;
-            /*延迟时间*/
-        }
-        
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }`;
         return (
             <div className={styles.textPage}>
                 <div className={styles.textbox}>
@@ -95,7 +24,7 @@ export default class CommonText extends Component {
                 </div>
                 <Collapse onChange={callback}>
                     <Panel header="查看代码" key="1">
-                        <Highlight>{code1}</Highlight>
+                        <Highlight>{codeObj.code1}</Highlight>
                     </Panel>
                 </Collapse>
                 <div className={styles.textbox}>
@@ -105,7 +34,7 @@ export default class CommonText extends Component {
                 </div>
                 <Collapse onChange={callback}>
                     <Panel header="查看代码" key="1">
-                        <Highlight>{code2}</Highlight>
+                        <Highlight>{codeObj.code2}</Highlight>
                     </Panel>
                 </Collapse>
                 <div className={styles.textbox}>
@@ -115,7 +44,7 @@ export default class CommonText extends Component {
                 </div>
                 <Collapse onChange={callback}>
                     <Panel header="查看代码" key="1">
-                        <Highlight>{code3}</Highlight>
+                        <Highlight>{codeObj.code3}</Highlight>
                     </Panel>
                 </Collapse>
                 <div className={styles.textbox}>
@@ -125,7 +54,7 @@ export default class CommonText extends Component {
                 </div>
                 <Collapse onChange={callback}>
                     <Panel header="查看代码" key="1">
-                        <Highlight>{code4}</Highlight>
+                        <Highlight>{codeObj.code4}</Highlight>
                     </Panel>
                 </Collapse>
                 <div className={styles.textbox}>
@@ -135,7 +64,7 @@ export default class CommonText extends Component {
                 </div>
                 <Collapse onChange={callback}>
                     <Panel header="查看代码" key="1">
-                        <Highlight>{code5}</Highlight>
+                        <Highlight>{codeObj.code5}</Highlight>
                     </Panel>
                 </Collapse>
                 <div className={styles.textbox}>
@@ -143,7 +72,23 @@ export default class CommonText extends Component {
                 </div>
                 <Collapse onChange={callback}>
                     <Panel header="查看代码" key="1">
-                        <Highlight>{code6}</Highlight>
+                        <Highlight>{codeObj.code6}</Highlight>
+                    </Panel>
+                </Collapse>
+                <div className={styles.textbox}>
+                    <div className={styles.clipText}>5.1文字镂空效果</div>
+                </div>
+                <Collapse onChange={callback}>
+                    <Panel header="查看代码" key="1">
+                        <Highlight>{codeObj.clipText}</Highlight>
+                    </Panel>
+                </Collapse>
+                <div className={styles.textbox}>
+                    <div className={styles.zebraText}>5.1文字斑马线效果</div>
+                </div>
+                <Collapse onChange={callback}>
+                    <Panel header="查看代码" key="1">
+                        <Highlight>{codeObj.zebraText}</Highlight>
                     </Panel>
                 </Collapse>
             </div>
