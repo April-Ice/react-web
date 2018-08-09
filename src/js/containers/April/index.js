@@ -49,6 +49,18 @@ export default class April extends Component {
                                 <span>Intro</span>
                             </Link>
                         </Menu.Item>
+                        <Menu.Item key="8">
+                            <Link to='http://react-china.org/t/jsp-webpack-react-components/13520/4'>
+                                <Icon type="user"/>
+                                <span>测试外嵌</span>
+                            </Link>
+                        </Menu.Item>
+                        {/* <Menu.Item key="app">
+                            <a href="html/test_html.html">
+                                <Icon type="user"/>
+                                <span>App</span>
+                            </a>
+                        </Menu.Item> */}
                     </Menu>
                 </Sider>
                 <Layout>

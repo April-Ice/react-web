@@ -15,7 +15,9 @@ import {
     Charts,
     AnimateCss,
     BoxBorder,
-    ImgFilter
+    ImgFilter,
+    CommonButton,
+    Demo
 } from './containers'
 
 export default (
@@ -35,6 +37,8 @@ export default (
             <Route path='boxBorder' component={BoxBorder} />
             <Route path='aniCss' component={AnimateCss} />
             <Route path='imgFilter' component={ImgFilter} />
+            <Route path='button' component={CommonButton} />
+            <Route path='test' component={Demo} />
         </Route>
 
         <Route path="*" component={NotFoundPage} />

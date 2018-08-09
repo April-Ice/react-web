@@ -34,6 +34,11 @@ export default class CommonMenu extends Component {
                             <Card title="css图片滤镜" bordered={false}>黑白，倒影等</Card>
                         </Link>
                     </Col>
+                    <Col span={4}>
+                        <Link to="/april/button">
+                            <Card title="button动画特效" bordered={false}>碎化消失</Card>
+                        </Link>
+                    </Col>
                 </Row>
             </div>
         );

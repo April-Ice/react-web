@@ -15,6 +15,8 @@ export { default as Charts } from './Echarts/demo/chart.js'
 export { default as BoxBorder } from './CommonCss/box_border'
 export { default as AnimateCss } from './CommonCss/animate'
 export { default as ImgFilter } from './CommonCss/imgFilter'
+export { default as CommonButton } from './CommonCss/button'
+export { default as Demo } from './CommonCss/testPage'
 
 
 // 404
